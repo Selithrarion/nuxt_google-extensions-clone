@@ -23,7 +23,7 @@
 				</v-col>
 
 				<v-list-item v-for="link in links" :key="link.title">
-					<nuxt-link :to="link.to"></nuxt-link>
+					<nuxt-link :to="link.to">{{ link.title }}</nuxt-link>
 				</v-list-item>
 			</v-list>
 		</v-navigation-drawer>
